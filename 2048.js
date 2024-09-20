@@ -50,6 +50,14 @@ function updateTile(tile, num) {
         }                
     }
 }
+var arrow_keys_handler = function(e) {
+    switch(e.code){
+        case "ArrowUp": case "ArrowDown": case "ArrowLeft": case "ArrowRight": 
+            case "Space": e.preventDefault(); break;
+        default: break; // do not block other keys
+    }
+};
+window.addEventListener("keydown", arrow_keys_handler, false);
 
 document.addEventListener('keyup', (e) => {
     if (e.code == "ArrowLeft") {
