@@ -6,10 +6,6 @@ var columns = 4;
 window.onload = function() {
     setGame();
 }
-document.querySelector('.restart-btn').addEventListener('click', function(){
-  window.location.reload();
-  return false;
-});
 
 function setGame() {
     // board = [
